@@ -60,8 +60,10 @@
             ClientSize = new Size(723, 317);
             Controls.Add(progressBar1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
