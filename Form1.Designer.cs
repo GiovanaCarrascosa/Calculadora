@@ -46,7 +46,7 @@
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(315, 155);
+            progressBar1.Location = new Point(321, 146);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(369, 27);
             progressBar1.TabIndex = 1;
@@ -60,6 +60,7 @@
             ClientSize = new Size(723, 317);
             Controls.Add(progressBar1);
             Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
