@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
             progressBar1 = new ProgressBar();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -50,7 +52,13 @@
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(369, 27);
             progressBar1.TabIndex = 1;
-            progressBar1.Value = 100;
+            progressBar1.Click += progressBar1_Click;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 50;
+            timer1.Tick += timer1_Tick;
             // 
             // Form1
             // 
@@ -73,5 +81,6 @@
 
         private PictureBox pictureBox1;
         private ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
