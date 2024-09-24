@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCalculadora));
-            pictureBox2 = new PictureBox();
             button1 = new Button();
             textBox1 = new TextBox();
             button2 = new Button();
@@ -51,22 +50,14 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            button17 = new Button();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(0, 361);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(105, 83);
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
             // 
             // button1
             // 
@@ -295,12 +286,35 @@
             pictureBox5.TabIndex = 30;
             pictureBox5.TabStop = false;
             // 
+            // button17
+            // 
+            button17.BackColor = Color.Crimson;
+            button17.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button17.ForeColor = Color.White;
+            button17.Location = new Point(345, 423);
+            button17.Name = "button17";
+            button17.Size = new Size(60, 34);
+            button17.TabIndex = 31;
+            button17.Text = "SAIR";
+            button17.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Location = new Point(0, 361);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(105, 83);
+            pictureBox2.TabIndex = 3;
+            pictureBox2.TabStop = false;
+            // 
             // TelaCalculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightPink;
             ClientSize = new Size(427, 469);
+            Controls.Add(button17);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
@@ -327,11 +341,11 @@
             Name = "TelaCalculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaCalculadora";
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -359,5 +373,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
+        private Button button17;
     }
 }
