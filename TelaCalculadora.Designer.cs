@@ -291,9 +291,9 @@
             button17.BackColor = Color.Crimson;
             button17.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button17.ForeColor = Color.White;
-            button17.Location = new Point(345, 423);
+            button17.Location = new Point(334, 423);
             button17.Name = "button17";
-            button17.Size = new Size(60, 34);
+            button17.Size = new Size(81, 42);
             button17.TabIndex = 31;
             button17.Text = "SAIR";
             button17.UseVisualStyleBackColor = false;
