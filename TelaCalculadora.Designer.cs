@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCalculadora));
-            button1 = new Button();
+            btnMais = new Button();
             textBox1 = new TextBox();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            button16 = new Button();
+            btnMenos = new Button();
+            btnVezes = new Button();
+            btnDiv = new Button();
+            btnUm = new Button();
+            btnDois = new Button();
+            btnTres = new Button();
+            btnApagar = new Button();
+            btnIgual = new Button();
+            btnSeis = new Button();
+            btnCinco = new Button();
+            btnQuatro = new Button();
+            btnZero = new Button();
+            btnSete = new Button();
+            btnOito = new Button();
+            btsNove = new Button();
             pictureBox1 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
-            button17 = new Button();
+            btnSair = new Button();
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -59,16 +59,17 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnMais
             // 
-            button1.BackColor = Color.GhostWhite;
-            button1.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(111, 79);
-            button1.Name = "button1";
-            button1.Size = new Size(60, 54);
-            button1.TabIndex = 4;
-            button1.Text = "+";
-            button1.UseVisualStyleBackColor = false;
+            btnMais.BackColor = Color.GhostWhite;
+            btnMais.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMais.Location = new Point(111, 79);
+            btnMais.Name = "btnMais";
+            btnMais.Size = new Size(60, 54);
+            btnMais.TabIndex = 4;
+            btnMais.Text = "+";
+            btnMais.UseVisualStyleBackColor = false;
+            btnMais.Click += btnMais_Click_1;
             // 
             // textBox1
             // 
@@ -79,172 +80,185 @@
             textBox1.TabIndex = 11;
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // button2
+            // btnMenos
             // 
-            button2.BackColor = Color.GhostWhite;
-            button2.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(190, 79);
-            button2.Name = "button2";
-            button2.Size = new Size(60, 54);
-            button2.TabIndex = 12;
-            button2.Text = "-";
-            button2.UseVisualStyleBackColor = false;
+            btnMenos.BackColor = Color.GhostWhite;
+            btnMenos.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMenos.Location = new Point(190, 79);
+            btnMenos.Name = "btnMenos";
+            btnMenos.Size = new Size(60, 54);
+            btnMenos.TabIndex = 12;
+            btnMenos.Text = "-";
+            btnMenos.UseVisualStyleBackColor = false;
+            btnMenos.Click += btnMenos_Click;
             // 
-            // button3
+            // btnVezes
             // 
-            button3.BackColor = Color.GhostWhite;
-            button3.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(270, 79);
-            button3.Name = "button3";
-            button3.Size = new Size(60, 54);
-            button3.TabIndex = 13;
-            button3.Text = "*";
-            button3.UseVisualStyleBackColor = false;
+            btnVezes.BackColor = Color.GhostWhite;
+            btnVezes.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVezes.Location = new Point(270, 79);
+            btnVezes.Name = "btnVezes";
+            btnVezes.Size = new Size(60, 54);
+            btnVezes.TabIndex = 13;
+            btnVezes.Text = "*";
+            btnVezes.UseVisualStyleBackColor = false;
+            btnVezes.Click += btnVezes_Click;
             // 
-            // button4
+            // btnDiv
             // 
-            button4.BackColor = Color.GhostWhite;
-            button4.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(345, 79);
-            button4.Name = "button4";
-            button4.Size = new Size(60, 54);
-            button4.TabIndex = 14;
-            button4.Text = "/";
-            button4.UseVisualStyleBackColor = false;
+            btnDiv.BackColor = Color.GhostWhite;
+            btnDiv.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDiv.Location = new Point(345, 79);
+            btnDiv.Name = "btnDiv";
+            btnDiv.Size = new Size(60, 54);
+            btnDiv.TabIndex = 14;
+            btnDiv.Text = "/";
+            btnDiv.UseVisualStyleBackColor = false;
+            btnDiv.Click += btnDiv_Click;
             // 
-            // button5
+            // btnUm
             // 
-            button5.BackColor = Color.GhostWhite;
-            button5.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Location = new Point(111, 148);
-            button5.Name = "button5";
-            button5.Size = new Size(60, 54);
-            button5.TabIndex = 15;
-            button5.Text = "1";
-            button5.UseVisualStyleBackColor = false;
+            btnUm.BackColor = Color.GhostWhite;
+            btnUm.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnUm.Location = new Point(111, 148);
+            btnUm.Name = "btnUm";
+            btnUm.Size = new Size(60, 54);
+            btnUm.TabIndex = 15;
+            btnUm.Text = "1";
+            btnUm.UseVisualStyleBackColor = false;
+            btnUm.Click += btnUm_Click;
             // 
-            // button6
+            // btnDois
             // 
-            button6.BackColor = Color.GhostWhite;
-            button6.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.Location = new Point(190, 148);
-            button6.Name = "button6";
-            button6.Size = new Size(60, 54);
-            button6.TabIndex = 16;
-            button6.Text = "2";
-            button6.UseVisualStyleBackColor = false;
+            btnDois.BackColor = Color.GhostWhite;
+            btnDois.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDois.Location = new Point(190, 148);
+            btnDois.Name = "btnDois";
+            btnDois.Size = new Size(60, 54);
+            btnDois.TabIndex = 16;
+            btnDois.Text = "2";
+            btnDois.UseVisualStyleBackColor = false;
+            btnDois.Click += btnDois_Click;
             // 
-            // button7
+            // btnTres
             // 
-            button7.BackColor = Color.GhostWhite;
-            button7.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.Location = new Point(270, 148);
-            button7.Name = "button7";
-            button7.Size = new Size(60, 54);
-            button7.TabIndex = 17;
-            button7.Text = "3";
-            button7.UseVisualStyleBackColor = false;
+            btnTres.BackColor = Color.GhostWhite;
+            btnTres.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTres.Location = new Point(270, 148);
+            btnTres.Name = "btnTres";
+            btnTres.Size = new Size(60, 54);
+            btnTres.TabIndex = 17;
+            btnTres.Text = "3";
+            btnTres.UseVisualStyleBackColor = false;
+            btnTres.Click += btnTres_Click;
             // 
-            // button8
+            // btnApagar
             // 
-            button8.BackColor = Color.GhostWhite;
-            button8.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button8.Location = new Point(345, 148);
-            button8.Name = "button8";
-            button8.Size = new Size(60, 54);
-            button8.TabIndex = 18;
-            button8.Text = "CLS";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
+            btnApagar.BackColor = Color.GhostWhite;
+            btnApagar.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnApagar.Location = new Point(345, 148);
+            btnApagar.Name = "btnApagar";
+            btnApagar.Size = new Size(60, 54);
+            btnApagar.TabIndex = 18;
+            btnApagar.Text = "CLS";
+            btnApagar.UseVisualStyleBackColor = false;
+            btnApagar.Click += button8_Click;
             // 
-            // button9
+            // btnIgual
             // 
-            button9.BackColor = Color.AliceBlue;
-            button9.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button9.Location = new Point(345, 217);
-            button9.Name = "button9";
-            button9.Size = new Size(60, 198);
-            button9.TabIndex = 19;
-            button9.Text = "=";
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
+            btnIgual.BackColor = Color.AliceBlue;
+            btnIgual.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnIgual.Location = new Point(345, 217);
+            btnIgual.Name = "btnIgual";
+            btnIgual.Size = new Size(60, 198);
+            btnIgual.TabIndex = 19;
+            btnIgual.Text = "=";
+            btnIgual.UseVisualStyleBackColor = false;
+            btnIgual.Click += button9_Click;
             // 
-            // button10
+            // btnSeis
             // 
-            button10.BackColor = Color.GhostWhite;
-            button10.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button10.Location = new Point(270, 217);
-            button10.Name = "button10";
-            button10.Size = new Size(60, 54);
-            button10.TabIndex = 20;
-            button10.Text = "6";
-            button10.UseVisualStyleBackColor = false;
+            btnSeis.BackColor = Color.GhostWhite;
+            btnSeis.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSeis.Location = new Point(270, 217);
+            btnSeis.Name = "btnSeis";
+            btnSeis.Size = new Size(60, 54);
+            btnSeis.TabIndex = 20;
+            btnSeis.Text = "6";
+            btnSeis.UseVisualStyleBackColor = false;
+            btnSeis.Click += btnSeis_Click;
             // 
-            // button11
+            // btnCinco
             // 
-            button11.BackColor = Color.GhostWhite;
-            button11.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button11.Location = new Point(190, 217);
-            button11.Name = "button11";
-            button11.Size = new Size(60, 54);
-            button11.TabIndex = 21;
-            button11.Text = "5";
-            button11.UseVisualStyleBackColor = false;
+            btnCinco.BackColor = Color.GhostWhite;
+            btnCinco.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCinco.Location = new Point(190, 217);
+            btnCinco.Name = "btnCinco";
+            btnCinco.Size = new Size(60, 54);
+            btnCinco.TabIndex = 21;
+            btnCinco.Text = "5";
+            btnCinco.UseVisualStyleBackColor = false;
+            btnCinco.Click += btnCinco_Click;
             // 
-            // button12
+            // btnQuatro
             // 
-            button12.BackColor = Color.GhostWhite;
-            button12.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button12.Location = new Point(111, 217);
-            button12.Name = "button12";
-            button12.Size = new Size(60, 54);
-            button12.TabIndex = 22;
-            button12.Text = "4";
-            button12.UseVisualStyleBackColor = false;
+            btnQuatro.BackColor = Color.GhostWhite;
+            btnQuatro.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQuatro.Location = new Point(111, 217);
+            btnQuatro.Name = "btnQuatro";
+            btnQuatro.Size = new Size(60, 54);
+            btnQuatro.TabIndex = 22;
+            btnQuatro.Text = "4";
+            btnQuatro.UseVisualStyleBackColor = false;
+            btnQuatro.Click += btnQuatro_Click;
             // 
-            // button13
+            // btnZero
             // 
-            button13.BackColor = Color.AliceBlue;
-            button13.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button13.Location = new Point(111, 361);
-            button13.Name = "button13";
-            button13.Size = new Size(219, 54);
-            button13.TabIndex = 23;
-            button13.Text = "0";
-            button13.UseVisualStyleBackColor = false;
+            btnZero.BackColor = Color.AliceBlue;
+            btnZero.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnZero.Location = new Point(111, 361);
+            btnZero.Name = "btnZero";
+            btnZero.Size = new Size(219, 54);
+            btnZero.TabIndex = 23;
+            btnZero.Text = "0";
+            btnZero.UseVisualStyleBackColor = false;
+            btnZero.Click += btnZero_Click;
             // 
-            // button14
+            // btnSete
             // 
-            button14.BackColor = Color.GhostWhite;
-            button14.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button14.Location = new Point(111, 290);
-            button14.Name = "button14";
-            button14.Size = new Size(60, 54);
-            button14.TabIndex = 24;
-            button14.Text = "7";
-            button14.UseVisualStyleBackColor = false;
+            btnSete.BackColor = Color.GhostWhite;
+            btnSete.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSete.Location = new Point(111, 290);
+            btnSete.Name = "btnSete";
+            btnSete.Size = new Size(60, 54);
+            btnSete.TabIndex = 24;
+            btnSete.Text = "7";
+            btnSete.UseVisualStyleBackColor = false;
+            btnSete.Click += btnSete_Click;
             // 
-            // button15
+            // btnOito
             // 
-            button15.BackColor = Color.GhostWhite;
-            button15.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button15.Location = new Point(190, 290);
-            button15.Name = "button15";
-            button15.Size = new Size(60, 54);
-            button15.TabIndex = 25;
-            button15.Text = "8";
-            button15.UseVisualStyleBackColor = false;
+            btnOito.BackColor = Color.GhostWhite;
+            btnOito.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnOito.Location = new Point(190, 290);
+            btnOito.Name = "btnOito";
+            btnOito.Size = new Size(60, 54);
+            btnOito.TabIndex = 25;
+            btnOito.Text = "8";
+            btnOito.UseVisualStyleBackColor = false;
+            btnOito.Click += btnOito_Click;
             // 
-            // button16
+            // btsNove
             // 
-            button16.BackColor = Color.GhostWhite;
-            button16.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button16.Location = new Point(270, 290);
-            button16.Name = "button16";
-            button16.Size = new Size(60, 54);
-            button16.TabIndex = 26;
-            button16.Text = "9";
-            button16.UseVisualStyleBackColor = false;
+            btsNove.BackColor = Color.GhostWhite;
+            btsNove.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btsNove.Location = new Point(270, 290);
+            btsNove.Name = "btsNove";
+            btsNove.Size = new Size(60, 54);
+            btsNove.TabIndex = 26;
+            btsNove.Text = "9";
+            btsNove.UseVisualStyleBackColor = false;
+            btsNove.Click += btsNove_Click;
             // 
             // pictureBox1
             // 
@@ -286,17 +300,18 @@
             pictureBox5.TabIndex = 30;
             pictureBox5.TabStop = false;
             // 
-            // button17
+            // btnSair
             // 
-            button17.BackColor = Color.Crimson;
-            button17.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button17.ForeColor = Color.White;
-            button17.Location = new Point(334, 423);
-            button17.Name = "button17";
-            button17.Size = new Size(81, 42);
-            button17.TabIndex = 31;
-            button17.Text = "SAIR";
-            button17.UseVisualStyleBackColor = false;
+            btnSair.BackColor = Color.Crimson;
+            btnSair.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSair.ForeColor = Color.White;
+            btnSair.Location = new Point(334, 423);
+            btnSair.Name = "btnSair";
+            btnSair.Size = new Size(81, 42);
+            btnSair.TabIndex = 31;
+            btnSair.Text = "SAIR";
+            btnSair.UseVisualStyleBackColor = false;
+            btnSair.Click += btnSair_Click;
             // 
             // pictureBox2
             // 
@@ -314,28 +329,28 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightPink;
             ClientSize = new Size(427, 469);
-            Controls.Add(button17);
+            Controls.Add(btnSair);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
-            Controls.Add(button16);
-            Controls.Add(button15);
-            Controls.Add(button14);
-            Controls.Add(button13);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btsNove);
+            Controls.Add(btnOito);
+            Controls.Add(btnSete);
+            Controls.Add(btnZero);
+            Controls.Add(btnQuatro);
+            Controls.Add(btnCinco);
+            Controls.Add(btnSeis);
+            Controls.Add(btnIgual);
+            Controls.Add(btnApagar);
+            Controls.Add(btnTres);
+            Controls.Add(btnDois);
+            Controls.Add(btnUm);
+            Controls.Add(btnDiv);
+            Controls.Add(btnVezes);
+            Controls.Add(btnMenos);
             Controls.Add(textBox1);
-            Controls.Add(button1);
+            Controls.Add(btnMais);
             Controls.Add(pictureBox2);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "TelaCalculadora";
@@ -352,27 +367,33 @@
 
         #endregion
         private PictureBox pictureBox2;
-        private Button button1;
+        private Button btnMais;
         private TextBox textBox1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
-        private Button button15;
-        private Button button16;
+        private Button btnMenos;
+        private Button btnVezes;
+        private Button btnDiv;
+        private Button btnUm;
+        private Button btnDois;
+        private Button btnTres;
+     
+  
+       
+       
+     
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
-        private Button button17;
+      
+        private Button btnApagar;
+        private Button btnIgual;
+        private Button btnSeis;
+        private Button btnCinco;
+        private Button btnQuatro;
+        private Button btnZero;
+        private Button btnSete;
+        private Button btnOito;
+        private Button btsNove;
+        private Button btnSair;
     }
 }
