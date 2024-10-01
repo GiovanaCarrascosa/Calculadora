@@ -52,18 +52,22 @@
             pictureBox5 = new PictureBox();
             btnSair = new Button();
             pictureBox2 = new PictureBox();
+            menuStrip1 = new MenuStrip();
+            menu = new ToolStripMenuItem();
+            CtoF = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // btnMais
             // 
             btnMais.BackColor = Color.GhostWhite;
             btnMais.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnMais.Location = new Point(111, 79);
+            btnMais.Location = new Point(115, 159);
             btnMais.Name = "btnMais";
             btnMais.Size = new Size(60, 54);
             btnMais.TabIndex = 4;
@@ -75,18 +79,19 @@
             // 
             textBox1.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox1.ForeColor = SystemColors.WindowText;
-            textBox1.Location = new Point(12, 12);
+            textBox1.Location = new Point(12, 96);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(403, 45);
             textBox1.TabIndex = 11;
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // btnMenos
             // 
             btnMenos.BackColor = Color.GhostWhite;
             btnMenos.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnMenos.Location = new Point(190, 79);
+            btnMenos.Location = new Point(194, 159);
             btnMenos.Name = "btnMenos";
             btnMenos.Size = new Size(60, 54);
             btnMenos.TabIndex = 12;
@@ -98,7 +103,7 @@
             // 
             btnVezes.BackColor = Color.GhostWhite;
             btnVezes.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVezes.Location = new Point(270, 79);
+            btnVezes.Location = new Point(274, 159);
             btnVezes.Name = "btnVezes";
             btnVezes.Size = new Size(60, 54);
             btnVezes.TabIndex = 13;
@@ -110,7 +115,7 @@
             // 
             btnDiv.BackColor = Color.GhostWhite;
             btnDiv.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDiv.Location = new Point(345, 79);
+            btnDiv.Location = new Point(349, 159);
             btnDiv.Name = "btnDiv";
             btnDiv.Size = new Size(60, 54);
             btnDiv.TabIndex = 14;
@@ -122,7 +127,7 @@
             // 
             btnUm.BackColor = Color.GhostWhite;
             btnUm.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnUm.Location = new Point(111, 148);
+            btnUm.Location = new Point(115, 228);
             btnUm.Name = "btnUm";
             btnUm.Size = new Size(60, 54);
             btnUm.TabIndex = 15;
@@ -134,7 +139,7 @@
             // 
             btnDois.BackColor = Color.GhostWhite;
             btnDois.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDois.Location = new Point(190, 148);
+            btnDois.Location = new Point(194, 228);
             btnDois.Name = "btnDois";
             btnDois.Size = new Size(60, 54);
             btnDois.TabIndex = 16;
@@ -146,7 +151,7 @@
             // 
             btnTres.BackColor = Color.GhostWhite;
             btnTres.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnTres.Location = new Point(270, 148);
+            btnTres.Location = new Point(274, 228);
             btnTres.Name = "btnTres";
             btnTres.Size = new Size(60, 54);
             btnTres.TabIndex = 17;
@@ -158,7 +163,7 @@
             // 
             btnApagar.BackColor = Color.GhostWhite;
             btnApagar.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnApagar.Location = new Point(345, 148);
+            btnApagar.Location = new Point(349, 228);
             btnApagar.Name = "btnApagar";
             btnApagar.Size = new Size(60, 54);
             btnApagar.TabIndex = 18;
@@ -170,7 +175,7 @@
             // 
             btnIgual.BackColor = Color.AliceBlue;
             btnIgual.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnIgual.Location = new Point(345, 217);
+            btnIgual.Location = new Point(349, 297);
             btnIgual.Name = "btnIgual";
             btnIgual.Size = new Size(60, 198);
             btnIgual.TabIndex = 19;
@@ -182,7 +187,7 @@
             // 
             btnSeis.BackColor = Color.GhostWhite;
             btnSeis.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSeis.Location = new Point(270, 217);
+            btnSeis.Location = new Point(274, 297);
             btnSeis.Name = "btnSeis";
             btnSeis.Size = new Size(60, 54);
             btnSeis.TabIndex = 20;
@@ -194,7 +199,7 @@
             // 
             btnCinco.BackColor = Color.GhostWhite;
             btnCinco.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCinco.Location = new Point(190, 217);
+            btnCinco.Location = new Point(194, 297);
             btnCinco.Name = "btnCinco";
             btnCinco.Size = new Size(60, 54);
             btnCinco.TabIndex = 21;
@@ -206,7 +211,7 @@
             // 
             btnQuatro.BackColor = Color.GhostWhite;
             btnQuatro.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnQuatro.Location = new Point(111, 217);
+            btnQuatro.Location = new Point(115, 297);
             btnQuatro.Name = "btnQuatro";
             btnQuatro.Size = new Size(60, 54);
             btnQuatro.TabIndex = 22;
@@ -218,7 +223,7 @@
             // 
             btnZero.BackColor = Color.AliceBlue;
             btnZero.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnZero.Location = new Point(111, 361);
+            btnZero.Location = new Point(115, 441);
             btnZero.Name = "btnZero";
             btnZero.Size = new Size(219, 54);
             btnZero.TabIndex = 23;
@@ -230,7 +235,7 @@
             // 
             btnSete.BackColor = Color.GhostWhite;
             btnSete.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSete.Location = new Point(111, 290);
+            btnSete.Location = new Point(115, 370);
             btnSete.Name = "btnSete";
             btnSete.Size = new Size(60, 54);
             btnSete.TabIndex = 24;
@@ -242,7 +247,7 @@
             // 
             btnOito.BackColor = Color.GhostWhite;
             btnOito.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnOito.Location = new Point(190, 290);
+            btnOito.Location = new Point(194, 370);
             btnOito.Name = "btnOito";
             btnOito.Size = new Size(60, 54);
             btnOito.TabIndex = 25;
@@ -254,7 +259,7 @@
             // 
             btsNove.BackColor = Color.GhostWhite;
             btsNove.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btsNove.Location = new Point(270, 290);
+            btsNove.Location = new Point(274, 370);
             btsNove.Name = "btsNove";
             btsNove.Size = new Size(60, 54);
             btsNove.TabIndex = 26;
@@ -266,7 +271,7 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(0, 63);
+            pictureBox1.Location = new Point(5, 159);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(105, 83);
             pictureBox1.TabIndex = 27;
@@ -276,7 +281,7 @@
             // 
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(0, 134);
+            pictureBox3.Location = new Point(5, 230);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(105, 83);
             pictureBox3.TabIndex = 28;
@@ -286,7 +291,7 @@
             // 
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox4.Location = new Point(0, 209);
+            pictureBox4.Location = new Point(5, 305);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(105, 83);
             pictureBox4.TabIndex = 29;
@@ -296,7 +301,7 @@
             // 
             pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
             pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox5.Location = new Point(0, 281);
+            pictureBox5.Location = new Point(5, 377);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(105, 83);
             pictureBox5.TabIndex = 30;
@@ -307,7 +312,7 @@
             btnSair.BackColor = Color.Crimson;
             btnSair.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSair.ForeColor = Color.White;
-            btnSair.Location = new Point(334, 423);
+            btnSair.Location = new Point(338, 503);
             btnSair.Name = "btnSair";
             btnSair.Size = new Size(81, 42);
             btnSair.TabIndex = 31;
@@ -319,18 +324,41 @@
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(0, 361);
+            pictureBox2.Location = new Point(5, 457);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(105, 83);
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menu });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(427, 24);
+            menuStrip1.TabIndex = 32;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // menu
+            // 
+            menu.DropDownItems.AddRange(new ToolStripItem[] { CtoF });
+            menu.Name = "menu";
+            menu.Size = new Size(73, 20);
+            menu.Text = "Conversor";
+            // 
+            // CtoF
+            // 
+            CtoF.Name = "CtoF";
+            CtoF.Size = new Size(196, 22);
+            CtoF.Text = "Celsius para Fahrenheit";
+            CtoF.Click += CtoF_Click;
             // 
             // TelaCalculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightPink;
-            ClientSize = new Size(427, 469);
+            ClientSize = new Size(427, 555);
             Controls.Add(btnSair);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
@@ -354,7 +382,9 @@
             Controls.Add(textBox1);
             Controls.Add(btnMais);
             Controls.Add(pictureBox2);
+            Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
             Name = "TelaCalculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaCalculadora";
@@ -363,6 +393,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -397,5 +429,8 @@
         private Button btnOito;
         private Button btsNove;
         private Button btnSair;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem menu;
+        private ToolStripMenuItem CtoF;
     }
 }

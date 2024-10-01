@@ -135,5 +135,16 @@ namespace Calculadora
         {
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CtoF_Click(object sender, EventArgs e)
+        {
+            ConverterCtoF convertertela = new ConverterCtoF();
+            convertertela.ShowDialog();
+        }
     }
 }
