@@ -34,6 +34,7 @@
             textBox2 = new TextBox();
             textoexplicatorio = new Label();
             resultado = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // btnSair
@@ -68,6 +69,7 @@
             textBox1.Location = new Point(24, 40);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(403, 54);
             textBox1.TabIndex = 32;
             textBox1.TextAlign = HorizontalAlignment.Center;
@@ -104,6 +106,19 @@
             resultado.Text = "CONVERSÃO";
             resultado.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkMagenta;
+            button1.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(12, 283);
+            button1.Name = "button1";
+            button1.Size = new Size(81, 42);
+            button1.TabIndex = 38;
+            button1.Text = "CLS";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // ConverterCtoF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -111,6 +126,7 @@
             BackColor = Color.Violet;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(456, 337);
+            Controls.Add(button1);
             Controls.Add(resultado);
             Controls.Add(textoexplicatorio);
             Controls.Add(textBox2);
@@ -132,5 +148,6 @@
         private TextBox textBox2;
         private Label textoexplicatorio;
         private Label resultado;
+        private Button button1;
     }
 }

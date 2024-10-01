@@ -28,11 +28,17 @@ namespace Calculadora
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             valor1 = Convert.ToSingle(textBox2.Text);
+            
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
