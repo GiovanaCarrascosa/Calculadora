@@ -151,5 +151,11 @@ namespace Calculadora
         {
             Application.Exit();
         }
+
+        private void conversorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConverterCMtoPLG convertercmtela = new frmConverterCMtoPLG();
+            convertercmtela.ShowDialog();
+        }
     }
 }

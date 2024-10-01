@@ -55,6 +55,7 @@
             menuStrip1 = new MenuStrip();
             menu = new ToolStripMenuItem();
             CtoF = new ToolStripMenuItem();
+            conversorToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -341,7 +342,7 @@
             // 
             // menu
             // 
-            menu.DropDownItems.AddRange(new ToolStripItem[] { CtoF });
+            menu.DropDownItems.AddRange(new ToolStripItem[] { CtoF, conversorToolStripMenuItem });
             menu.Name = "menu";
             menu.Size = new Size(73, 20);
             menu.Text = "Conversor";
@@ -352,6 +353,13 @@
             CtoF.Size = new Size(196, 22);
             CtoF.Text = "Celsius para Fahrenheit";
             CtoF.Click += CtoF_Click;
+            // 
+            // conversorToolStripMenuItem
+            // 
+            conversorToolStripMenuItem.Name = "conversorToolStripMenuItem";
+            conversorToolStripMenuItem.Size = new Size(196, 22);
+            conversorToolStripMenuItem.Text = "CM para Polegadas";
+            conversorToolStripMenuItem.Click += conversorToolStripMenuItem_Click;
             // 
             // TelaCalculadora
             // 
@@ -433,5 +441,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem menu;
         private ToolStripMenuItem CtoF;
+        private ToolStripMenuItem conversorToolStripMenuItem;
     }
 }
