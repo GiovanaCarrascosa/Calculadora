@@ -12,7 +12,7 @@ namespace Calculadora
 {
     public partial class ConverterCtoF : Form
     {
-        float valor1 = 0;
+        
 
         public ConverterCtoF()
         {
@@ -21,13 +21,14 @@ namespace Calculadora
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            double resultado = valor1 * 1.8 + 32;
+            double celsius = Convert.ToDouble(textBox2.Text);   
+            double resultado = celsius * 1.8 + 32;
             textBox1.Text = resultado.ToString();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            valor1 = Convert.ToSingle(textBox2.Text);
+          
             
         }
 
@@ -38,7 +39,8 @@ namespace Calculadora
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            textBox1.Text = "";
+            textBox2.Text = "";
         }
     }
 }
