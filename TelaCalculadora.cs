@@ -146,5 +146,10 @@ namespace Calculadora
             ConverterCtoF convertertela = new ConverterCtoF();
             convertertela.ShowDialog();
         }
+
+        private void TelaCalculadora_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
