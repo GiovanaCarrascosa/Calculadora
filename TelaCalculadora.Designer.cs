@@ -388,6 +388,7 @@
             Name = "TelaCalculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaCalculadora";
+            FormClosed += TelaCalculadora_FormClosed;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();

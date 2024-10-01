@@ -19,7 +19,6 @@ namespace Calculadora
 
                 TelaCalculadora calculadoratela = new TelaCalculadora();
                 calculadoratela.ShowDialog();
-
                 
             }
         }
